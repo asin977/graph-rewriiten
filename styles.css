@@ -89,3 +89,8 @@ input {
     color:#fff;
 }
 
+@media screen and (min-width:375px) {
+    input {
+        margin-left:42px;
+    }
+}
