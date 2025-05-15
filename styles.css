@@ -12,6 +12,8 @@ body {
     margin:20px;
     background-color:black;
     color:black;
+    font-size:20px;
+    font-weight:bold;
 }
 h1 {
     text-align: center;
@@ -34,21 +36,40 @@ body {
     font-family: Arial, sans-serif;
     margin: 20px;
   }
-
-  .controls {
+button {
+    background-color:red;
+    padding:8px 10px;
+    color:#fff;
+    font-weight:bold;
+    font-size:18px;
+    border:none;
+    cursor: pointer;
+}
+button:disabled {
+    background-color:darkgoldenrod;
+    cursor:not-allowed;
+}
+button:hover {
+    background-color:darkred;
+}
+.controls {
     margin-bottom: 20px;
-  }
+}
 
-  label {
+label {
     margin-right: 10px;
-  }
+}
 
-  .grid {
+.grid {
     display: grid;
     gap: 3px;
-  }
-
-  .cell {
+    justify-content: center;
+}
+input {
+    padding:10px;
+    font-size:19px;
+}
+.cell {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -57,15 +78,14 @@ body {
     border: 1px solid #ccc;
     background-color: var(--color-x0, #eee);
     cursor: pointer;
-  }
+}
 
-  .cell.x1 {
+.cell.x1 {
     background-color: var(--color-x1, #90caf9);
-  }
+}
 
-  .cell.marked {
+.cell.marked {
     background-color: var(--color-marked, red);
     color:#fff;
-  }
+}
 
- 
