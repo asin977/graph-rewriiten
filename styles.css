@@ -1,0 +1,71 @@
+@import url("https://fonts.googleapis.com/css?family=Tangerine");
+@import url("https://fonts.googleapis.com/css?family=Inconsolata");
+
+html {
+    box-sizing: border-box;
+}
+*, *:after, *:before {
+    box-sizing: inherit;
+}
+
+body {
+    margin:20px;
+    background-color:black;
+    color:black;
+}
+h1 {
+    text-align: center;
+    color:#fff;
+}
+.Rows {
+    color:var(--color-Rows);
+}
+.Cols {
+    color:var(--color-Cols);
+}
+.xaxis {
+    color:var(--color-xaxis);
+
+}
+.yaxis {
+    color:var(--color-yaxis);
+}
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+  }
+
+  .controls {
+    margin-bottom: 20px;
+  }
+
+  label {
+    margin-right: 10px;
+  }
+
+  .grid {
+    display: grid;
+    gap: 3px;
+  }
+
+  .cell {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: var(--cell-size, 40px);
+    height: var(--cell-size, 40px);
+    border: 1px solid #ccc;
+    background-color: var(--color-x0, #eee);
+    cursor: pointer;
+  }
+
+  .cell.x1 {
+    background-color: var(--color-x1, #90caf9);
+  }
+
+  .cell.marked {
+    background-color: var(--color-marked, red);
+    color:#fff;
+  }
+
+ 

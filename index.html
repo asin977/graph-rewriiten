@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>X-Y-Plotting</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>Grid Coloring Panel</h1>
+    <div class="controls">
+        <label class="Rows">Rows:<input type="number" id="rows" min="1" ></label>
+        <label class="Cols">Columns:<input type="number" id="cols" min="1" ></label>
+        <label class="yaxis">Y:<input type="number" id="inputX" min="0" disabled></label>
+        <label class="xaxis">X:<input type="number" id="inputY" min="0" disabled></label><br><br>
+
+        <div class="buttons">
+            <button id="generate">Generate</button>
+            <button id="mark">Mark</button>
+            <button id="clear">Clear</button>
+            <button id="reset">Reset</button>
+        </div>    
+    </div>
+    <div id="grid" class="grid"></div>
+    <script src="script.js"></script>
+</body>
+</html>
